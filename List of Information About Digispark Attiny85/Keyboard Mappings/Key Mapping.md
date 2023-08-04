@@ -5,7 +5,6 @@ Please find below the basic key mappings for a standard QWERTY keyboard layout. 
 ## Keys
  
 #include "DigiKeyboard.h"
-
 // Key definitions
 #define KEY_NONE        0x00
 #define KEY_A           0x04
@@ -154,95 +153,8 @@ Please find below the basic key mappings for a standard QWERTY keyboard layout. 
 #define KEY_LANG4       0x93
 #define KEY_LANG5       0x94
 #define KEY_LANG6       0x95
-#define KEY_LANG7       0x96
-#define KEY_LANG8       0x97
-#define KEY_LANG9       0x98
-#define KEY_ALTERASE    0x99
-#define KEY_SYSREQ      0x9A
-#define KEY_CANCEL      0x9B
-#define KEY_CLEAR       0x9C
-#define KEY_PRIOR       0x9D
-#define KEY_RETURN      0x9E
-#define KEY_SEPARATOR   0x9F
-#define KEY_OUT         0xA0
-#define KEY_OPER        0xA1
-#define KEY_CLEARAGAIN  0xA2
-#define KEY_CRSEL       0xA3
-#define KEY_EXSEL       0xA4
-#define KEY_KP_00       0xB0
-#define KEY_KP_000      0xB1
-#define KEY_THOUSANDS_SEPARATOR 0xB2
-#define KEY_DECIMAL_SEPARATOR 0xB3
-#define KEY_CURRENCY_UNIT 0xB4
-#define KEY_CURRENCY_SUBUNIT 0xB5
-#define KEY_KP_LEFTPAREN 0xB6
-#define KEY_KP_RIGHTPAREN 0xB7
-#define KEY_KP_LEFTBRACE 0xB8
-#define KEY_KP_RIGHTBRACE 0xB9
-#define KEY_KP_TAB      0xBA
-#define KEY_KP_BACKSPACE 0xBB
-#define KEY_KP_A        0xBC
-#define KEY_KP_B        0xBD
-#define KEY_KP_C        0xBE
-#define KEY_KP_D        0xBF
-#define KEY_KP_E        0xC0
-#define KEY_KP_F        0xC1
-#define KEY_KP_XOR      0xC2
-#define KEY_KP_POWER    0xC3
-#define KEY_KP_PERCENT  0xC4
-#define KEY_KP_LESS     0xC5
-#define KEY_KP_GREATER  0xC6
-#define KEY_KP_AMPERSAND 0xC7
-#define KEY_KP_DBLAMPERSAND 0xC8
-#define KEY_KP_VERTICALBAR 0xC9
-#define KEY_KP_DBLVERTICALBAR 0xCA
-#define KEY_KP_COLON    0xCB
-#define KEY_KP_HASH     0xCC
-#define KEY_KP_SPACE    0xCD
-#define KEY_KP_AT       0xCE
-#define KEY_KP_EXCLAM   0xCF
-#define KEY_KP_MEMSTORE 0xD0
-#define KEY_KP_MEMRECALL 0xD1
-#define KEY_KP_MEMCLEAR 0xD2
-#define KEY_KP_MEMADD   0xD3
-#define KEY_KP_MEMSUBTRACT 0xD4
-#define KEY_KP_MEMMULTIPLY 0xD5
-#define KEY_KP_MEMDIVIDE 0xD6
-#define KEY_KP_PLUSMINUS 0xD7
-#define KEY_KP_CLEAR    0xD8
-#define KEY_KP_CLEARENTRY 0xD9
-#define KEY_KP_BINARY   0xDA
-#define KEY_KP_OCTAL    0xDB
-#define KEY_KP_DECIMAL  0xDC
-#define KEY_KP_HEXADECIMAL 0xDD
-#define KEY_LEFTCTRL    0xE0
-#define KEY_LEFTSHIFT   0xE1
-#define KEY_LEFTALT     0xE2
-#define KEY_LEFTMETA    0xE3
-#define KEY_RIGHTCTRL   0xE4
-#define KEY_RIGHTSHIFT  0xE5
-#define KEY_RIGHTALT    0xE6
-#define KEY_RIGHTMETA   0xE7
-#define KEY_MEDIA_PLAYPAUSE 0xE8
-#define KEY_MEDIA_STOPCD 0xE9
-#define KEY_MEDIA_PREVIOUSSONG 0xEA
-#define KEY_MEDIA_NEXTSONG 0xEB
-#define KEY_MEDIA_EJECTCD 0xEC
-#define KEY_MEDIA_VOLUMEUP 0xED
-#define KEY_MEDIA_VOLUMEDOWN 0xEE
-#define KEY_MEDIA_MUTE  0xEF
-#define KEY_MEDIA_WWW   0xF0
-#define KEY_MEDIA_BACK  0xF1
-#define KEY_MEDIA_FORWARD 0xF2
-#define KEY_MEDIA_STOP  0xF3
-#define KEY_MEDIA_FIND  0xF4
-#define KEY_MEDIA_SCROLLUP 0xF5
-#define KEY_MEDIA_SCROLLDOWN 0xF6
-#define KEY_MEDIA_EDIT  0xF7
-#define KEY_MEDIA_SLEEP 0xF8
-#define KEY_MEDIA_COFFEE 0xF9
-#define KEY_MEDIA_REFRESH 0xFA
-#define KEY_MEDIA_CALC  0xFB
+#define KEY
+
 
 ## Define an array to store keycodes of the keys you want to press
 uint8_t keys[] = {
