@@ -11,11 +11,17 @@ Please find below the basic key mappings for a standard QWERTY keyboard layout. 
 #define KEY_NONE        0x00
 
 #define KEY_A           0x04
+
 #define KEY_B           0x05
+
 #define KEY_C           0x06
+
 #define KEY_D           0x07
+
 #define KEY_E           0x08
+
 #define KEY_F           0x09
+
 #define KEY_G           0x0A
 #define KEY_H           0x0B
 #define KEY_I           0x0C
