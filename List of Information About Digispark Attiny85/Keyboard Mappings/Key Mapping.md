@@ -5,7 +5,9 @@ Please find below the basic key mappings for a standard QWERTY keyboard layout. 
 ## Keys
  
 #include "DigiKeyboard.h"
+
 // Key definitions
+
 #define KEY_NONE        0x00
 
 #define KEY_A           0x04
