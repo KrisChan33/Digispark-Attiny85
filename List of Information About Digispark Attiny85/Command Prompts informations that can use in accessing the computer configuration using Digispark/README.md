@@ -320,9 +320,102 @@ Below is a list of essential Command Prompt commands along with a brief explanat
 
 150. wmic nicconfig where index=1 call setdnsserversearchorder "DNSserver1, DNSserver2" /format:list: Sets the DNS servers for the first network adapter using a list format.
 
-...
-
-245. wmic path win32_computersystemproduct get identifyingnumber: Shows the computer's serial number (Product ID).
+150.	schtasks /create /sc daily /tn "TaskName" /tr "C:\script.bat" /st 12:00: Creates a daily scheduled task to run a batch script at 12:00 PM.
+151.	schtasks /delete /tn "TaskName" /f: Deletes a scheduled task (replace TaskName with the task's name).
+152.	schtasks /query /fo csv &gt; tasks.csv: Exports a list of scheduled tasks to a CSV file.
+153.	schtasks /query /fo list /v: Lists scheduled tasks with detailed information, including triggers and actions.
+154.	schtasks /query /fo list: Lists all scheduled tasks with detailed information.
+155.	schtasks /run /tn "TaskName": Runs a scheduled task immediately (replace TaskName with the task's name).
+156.	schtasks: Allows you to view and manage scheduled tasks on the system.
+157.	set: Shows all environment variables.
+158.	setx VAR "value": Sets an environment variable named VAR with the specified value.
+159.	sfc /scanfile=C:\file.dll: Scans a specific system file for integrity violations.
+160.	sfc /scannow: Initiates a system file integrity scan and repairs corrupted files.
+161.	sfc /scannow: Initiates a system file scan and repairs any corrupted files.
+162.	sfc: System File Checker is a utility that scans and repairs corrupted or missing system files on Windows. For example, sfc /scannow will start the scanning process.
+163.	shutdown /a: Aborts a system shutdown that has been initiated.
+164.	shutdown /h: Puts the computer into hibernation.
+165.	shutdown /i: Opens the Remote Shutdown Dialog for remote computer shutdown.
+166.	shutdown /l: Logs off the current user.
+167.	shutdown /s /t 0: Initiates an immediate system shutdown.
+168.	shutdown: Shuts down or restarts the computer. Use with caution, as it immediately initiates the shutdown or restart process. For example, shutdown /s will shut down the computer, and shutdown /r will restart it.
+169.	Sure, I'll arrange the commands with their descriptions and remove the duplicates:
+170.	systeminfo | find "System Boot Time": Displays the system boot time.
+171.	systeminfo | find "Total Physical Memory": Shows the total RAM installed on the system.
+172.	systeminfo | findstr /C:"Host Name" /C:"Domain": Shows the host name and domain information.
+173.	systeminfo | findstr /C:"System Boot Time" /C:"System Up Time": Shows the system boot time and uptime.
+174.	systeminfo | findstr /C:"System Boot Time": Shows the system boot time concisely.
+175.	systeminfo | findstr /C:"System Manufacturer" /C:"System Model" /C:"BIOS Version": Shows system manufacturer, model, and BIOS version.
+176.	systeminfo | findstr /C:"Total Physical Memory" /C:"Available Physical Memory": Shows total and available physical memory.
+177.	systeminfo: Displays detailed system information, including OS version, installed hotfixes, hardware details, and more.
+178.	systeminfo: Displays detailed system information, including OS version, memory, and processor details.
+179.	takeown /f C:\file.txt /a: Takes ownership of a file, granting administrative access.
+180.	takeown /f C:\file.txt /r /d y: Takes ownership of a file and its subdirectories, automatically granting permission.
+181.	takeown /f C:\file.txt: Takes ownership of a file, granting full access rights.
+182.	taskkill /f /fi "username eq USERNAME": Terminates all processes owned by a specific user (replace USERNAME with the actual username).
+183.	taskkill /f /im process.exe: Terminates a process forcefully.
+184.	taskkill /im process.exe /f: Forcefully terminates a specific process by name.
+185.	taskkill /pid 1234 /f: Forcefully terminates a specific process by its process ID (replace "1234" with the actual process ID).
+186.	taskkill: Terminates a running process. Be careful when using this command, as terminating critical processes can cause system issues. Use with caution.
+187.	tasklist /fi "imagename eq process.exe": Checks if a specific process is running.
+188.	tasklist /fi "status eq running": Lists currently running processes.
+189.	tasklist /fi "username eq USERNAME": Lists processes owned by a specific user (replace USERNAME with the actual username).
+190.	tasklist /m: Displays the DLL files associated with each running process.
+191.	tasklist /svc /fi "status eq running": Lists running processes along with their associated services.
+192.	tasklist /svc | find "services.exe": Shows services running under the services.exe process.
+193.	tasklist /svc: Lists all running processes along with the services they are associated with.
+194.	tasklist /v /fi "memusage gt 1000000": Lists processes consuming more than 1MB of memory.
+195.	tasklist /v: Lists running processes along with additional information.
+196.	tasklist /v: Provides more detailed information about running processes.
+197.	tasklist: Lists all running processes.
+198.	taskmgr: Opens the Task Manager, allowing you to monitor and manage running processes and system performance.
+199.	tree: Displays a graphical representation of the folder structure.
+200.	type C:\path\to\file.txt | find /c /v "": Counts the number of lines in a text file.
+201.	type: Displays the contents of a text file on the screen. For example, type myfile.txt will display the contents of "myfile.txt" in the Command Prompt window.
+202.	User
+203.	ver | findstr /C:"Version": Displays the Windows version number.
+204.	ver: Shows the Windows version information.
+205.	verifier: Opens Driver Verifier Manager to detect driver issues.
+206.	whoami /groups /fo table: Lists the security groups the current user belongs to in a table format.
+207.	whoami /groups: Displays the security groups the current user belongs to.
+208.	whoami: Shows the current user and their security privileges.
+209.	whoami: Shows the current username.
+210.	wmic bios get serialnumber: Retrieves the computer's BIOS serial number.
+211.	wmic cpu get caption, maxclockspeed: Displays the CPU model and its maximum clock speed.
+212.	wmic cpu get caption, numberofcores: Displays the CPU model and the number of cores.
+213.	wmic cpu get caption: Retrieves the CPU model information.
+214.	wmic diskdrive get caption: Lists all the disk drives on the computer.
+215.	wmic logicaldisk get caption, description, freespace: Lists information about all logical disk drives, including their captions, descriptions, and free space in bytes.
+216.	wmic logicaldisk get caption, description, volumename: Displays the captions, descriptions, and volume names of all logical disk drives.
+217.	wmic logicaldisk get caption, size: Shows the size of all logical disk drives.
+218.	wmic memorychip get capacity: Retrieves the capacity of the computer's physical memory chips.
+219.	wmic memorychip get devicelocator: Lists the device locators of all physical memory chips.
+220.	wmic nic get caption, macaddress: Displays the captions and MAC addresses of network adapters.
+221.	wmic nic get caption, netconnectionid: Lists the captions and network connection IDs of network adapters.
+222.	wmic nic get netconnectionid, speed: Shows the network connection IDs and speeds of network adapters.
+223.	wmic os get caption, version: Retrieves the operating system's caption and version.
+224.	wmic os get lastbootuptime: Shows the date and time when the operating system was last booted.
+225.	wmic os get localdatetime: Displays the current date and time in the local time zone.
+226.	wmic os get osarchitecture: Retrieves the operating system architecture (32-bit or 64-bit).
+227.	wmic os get totalvisiblememorysize: Shows the total visible memory available in the system.
+228.	wmic os get version: Displays the operating system's version.
+229.	wmic path softwarelicensingservice get OA3xOriginalProductKey: Retrieves the Windows product key (works on OA3 pre-installed Windows versions).
+230.	wmic printer get name: Lists all installed printers on the computer.
+231.	wmic process get caption, processid: Displays the captions and process IDs of all running processes.
+232.	wmic process get caption, processid, commandline: Lists the captions, process IDs, and command lines of all running processes.
+233.	wmic process get caption, processid, threadcount, commandline: Shows the captions, process IDs, thread counts, and command lines of running processes.
+234.	wmic process get description: Retrieves the descriptions of all running processes.
+235.	wmic product get name, version: Lists the names and versions of all installed software.
+236.	wmic product get name: Displays the names of all installed software on the computer.
+237.	wmic qfe get caption, description, hotfixid, installedon: Retrieves information about all installed Windows updates.
+238.	wmic service get caption, name, startmode: Lists the captions, names, and start modes of all services.
+239.	wmic service get caption, name, startmode, state: Displays the captions, names, start modes, and states of all services.
+240.	wmic startup get caption, command: Shows the captions and command lines of programs set to run at startup.
+241.	wmic startup get caption, location, command: Lists the captions, locations, and command lines of startup programs.
+242.	wmic useraccount get name, sid: Retrieves the names and Security Identifiers (SIDs) of all user accounts on the system.
+243.	wmic useraccount get name: Displays the names of all user accounts on the computer.
+244.	wmic volume get caption, label, capacity: Lists information about all volumes, including captions, labels, and capacities.
+245.	wmic volume get caption, label: Shows the captions and labels of all volumes.
 
 ## Conclusion
 
